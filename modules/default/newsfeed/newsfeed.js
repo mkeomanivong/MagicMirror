@@ -12,9 +12,15 @@ Module.register("newsfeed",{
 	// Default module config.
 	defaults: {
 		feeds: [
-			{
+			/* -- NEW YORK TIMES RSS FEED -- 
 				title: "New York Times",
 				url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+				encoding: "UTF-8" //ISO-8859-1
+			},
+			*/
+			{
+				title: "Reddit NEWS",
+				url: "http://www.reddit.com/r/news/.rss",
 				encoding: "UTF-8" //ISO-8859-1
 			}
 		],
