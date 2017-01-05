@@ -12,30 +12,33 @@
 		units: 'metric',
 		
 		modules:[
+				{
+				module: 'alert'
+				},
+				{
+				module: 'newsfeed',
+				position: 'bottom_bar'
+				config: {
+					feeds: [
 							{
-							module: 'alert'
+							title: "New York Times",
+							url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
 							},
-							{
-							module: 'newsfeed',
-							position: 'bottom_bar'
-							config: {
-								feeds: [
-								{
-									title: "New York Times",
-									url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-								},
-								]
-								showSourceTitle: true,
-								showPublishDate: true,
-								showDiscription: true
-								reloadInterval: 300000,
-								updateInterval: 10000,
-								animationSpeed: 2500,
-								maxNewsItems: 0,
-								removeStartTags: 'title', 'discription', 'both',
+						]
+					showSourceTitle: true,
+					showPublishDate: true,
+					showDiscription: true
+					reloadInterval: 300000,
+					updateInterval: 10000,
+					animationSpeed: 2500,
+					maxNewsItems: 0,
+					removeStartTags: 'video',
+					startTags: '',
+					removeEndtags: '',
+					endTags: '',
 								
-							}
-							},
-						],
+					}
+				},
+			],
 		}
 		
