@@ -45,8 +45,18 @@
 				config: {
 					location: 'San Diego, California, United States of America',
 					locationID: false,
-					appid: '',
-					units: config.units 
+					appid: '',					
+					}
+				},
+				{
+				module: 'currentweather',
+				position: 'top-right',
+				config: {
+					location: 'San Diego, California, United States of America',
+					locationID: '', //Location ID from http://openweathermap.org/help/city_list.txt
+					appid: '', //Need to make an openWeathermap account and get the API code. required for this to work
+					units: config.units,
+					roundTemp: false,
 					
 					}
 				}
