@@ -59,6 +59,34 @@
 					roundTemp: false,
 					
 					}
+				},
+				{
+				module: "updatenotification",
+				position: "top_bar"
+				},
+				{
+				module: 'clock',
+				position: 'top_left'
+				},
+				{
+				module: 'calendar',
+				position: 'top_left',
+				// if no config is set, an example calendar is shown.
+				config: {
+					maximumEntries: 10,
+					maximumNumberOfDays: 365,
+					displaySymbol: true,
+					defaultSymbol: calendar, 
+					maxTitleLength: 25,
+					fetchInterval: 300000,
+					animationSpeed: 2000;
+					fade: true,
+					fadePoint: 0.25,
+					//calendars:
+					//titleReplace:
+					displayRepeatingCountTitle: false,
+					dateFormat: mmm
+					}
 				}
 			]
 		}
