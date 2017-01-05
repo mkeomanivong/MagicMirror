@@ -17,7 +17,7 @@
 				},
 				{
 				module: 'newsfeed',
-				position: 'bottom_bar'
+				position: 'bottom_bar',
 				config: {
 					feeds: [
 							{
@@ -39,6 +39,17 @@
 								
 					}
 				},
-			],
+				{
+				module: 'weatherforecast',
+				position: 'top_right',
+				config: {
+					location: 'San Diego, California, United States of America',
+					locationID: false,
+					appid: '',
+					units: config.units 
+					
+					}
+				}
+			]
 		}
 		
